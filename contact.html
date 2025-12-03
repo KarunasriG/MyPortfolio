@@ -1,22 +1,87 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Contact Details</title>
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <h2>My Contact Details</h2>
-    <p>My Address </p>
-    <p>1234567890</p>
-    <p>myemail679@gmail.com</p>
-    <form action="mailto:karunasrigaddam@gmail.com" method="post" enctype="text/plain">
-       <label>Your Name:</label>
-          <input type="text" name="Your name" value=""><br>
-       <label>  Your Email:</label>
-          <input type="email" name="Your email" value=""><br>
-      <label>Your Message:</label><br>
-           <textarea name="Your message" rows="8" cols="30"></textarea><br>
-   </form>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 350px;
+  background: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color:#11cdd4;
+}
+
+label {
+  font-size: 14px;
+  margin: 8px 0 3px;
+  display: block;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #11cdd4;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #2DD1BA;
+}
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Contact Me</h2>
+
+    <form action="mailto:gaddamkarunasri679@gmail.com" method="post" enctype="text/plain">
+
+      <label>Your Name</label>
+      <input type="text" name="name" required />
+
+      <label>Your Email</label>
+      <input type="email" name="email" required />
+
+      <label>Your Message</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+  </div>
+
+</body>
 </html>
